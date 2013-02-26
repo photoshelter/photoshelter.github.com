@@ -1,0 +1,7 @@
+markdown: rdiscount
+pygments: true
+server: true
+auto: true
+future: false
+permalink: pretty
+analytics: TODO # better change this if you fork, yo
