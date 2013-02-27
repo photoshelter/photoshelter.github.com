@@ -1,27 +1,14 @@
-/*** common ***/
+/*** main ***/
 
 body {
-    color: #000;
+    color: #111;
+    background-color: #F0F0F0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 
-.wrapper {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.light {
-    color: #666;
-}
-
 #header ul,
+#content .posts,
 #footer ul {
     margin: 0;
     padding: 0;
@@ -45,14 +32,38 @@ body {
     text-decoration: underline;
 }
 
-/*** header ***/
+/*** global ***/
 
-#header .logo {
-    min-width: 800px;
+.div-center {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.div-belt {
+    width: 800px;
+    margin: 0 20px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+.light {
+    color: #666;
+}
+*/
+
+/*** brand ***/
+
+#brand {
+    min-width: 840px;
     background-color: rgba(0, 160, 240, 0.85); /* ps blue @ 85% */
 }
 
-#header .ps-logo {
+#brand .logo {
     display: block;
     width: 300px;
     height: 64px;
@@ -64,8 +75,10 @@ body {
     background-position: 0 26px;
 }
 
-#header .nav {
-    min-width: 800px;
+/*** header ***/
+
+#header {
+    min-width: 840px;
     background-color: rgb(0, 160, 240); /* ps blue @ 100% */
 }
 
@@ -85,35 +98,28 @@ body {
     width: 60px;
 }
 
-#header .nav a {
+#header a {
     display: block;
     padding: 5px 4px 7px 4px;
-}
-
-/*** container ***/
-
-#container {
-    width: 840px;
-    margin: 0 auto;
 }
 
 /*** content ***/
 
 #content {
-    width: 800px;
-    margin: 16px 20px;
+    background-color: #F0F0F0;
+    min-width: 840px;
+}
+
+#content .div-belt {
+    background: #FFF;
+    min-height: 256px; /* FIXME */
+    padding: 16px 0 16px 0;
 }
 
 #content h1 {
     font-size: 24px;
     margin: 0 10px;
     padding: 4px 4px 6px 4px;
-}
-
-#content .posts {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
 }
 
 #content .posts li {
@@ -123,7 +129,7 @@ body {
 }
 
 #content a {
-    color: #000;
+    color: #111;
 }
 #content a:hover {
     text-decoration: none;
@@ -133,9 +139,10 @@ body {
 
 #footer {
     color: #FFF;
+}
+
+#footer .div-belt {
     background-color: rgb(0, 160, 240); /* ps blue @ 100% */
-    width: 800px;
-    margin: 0 auto;
 }
 
 #footer li {
