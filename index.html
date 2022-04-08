@@ -27,8 +27,8 @@ body {
 }
 
 .pane {
-	margin: 0px 40px 40px 40px;
-	padding: 20px;
+	margin: 0px 60px 60px 60px;
+/* 	padding: 20px; */
 }
 
 h2 {
@@ -53,13 +53,19 @@ nav {
 	font-weight: 600;
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 800px) {
 	nav {
 		margin-bottom: 0px;
 	}
+}
 
-	.pane {
-		padding: 0 20px 20px 20px;
+@media (min-width: 1600px) {
+	nav, .pane {
+		margin-left: 100px;
+	}
+
+	nav {
+		margin-top: 60px;
 	}
 }
 
