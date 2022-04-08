@@ -1,9 +1,187 @@
----
-layout: default
-title: PhotoShelter Engineering
----
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>PhotoShelter Engineering</title>
 
-<h1>Projects</h1>
-                    <ol class="posts">
-                        <li>2012-11-11&nbsp;<span class="light">&gt;</span>&nbsp;<a href="https://github.com/photoshelter/scrollstream">ScrollStream</a></li>
-                    </ol>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Developer API resources and projects from PhotoShelter engineering." />
+	<meta name="theme-color" content="#B31079">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300;1,500&display=swap" rel="stylesheet" />
+
+	<link rel="shortcut icon" href="https://www.photoshelter.com/img/favicon.ico" type="image/png" />
+</head>
+<body>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #B31079;
+/* 	background-image: linear-gradient(90deg, #ed5a99 0%, #e55d4b 100%); */
+	background-image: linear-gradient(to right, #53135d, #641464, #76146b, #881370, #9a1275, #a90d75, #b80675, #c60073, #d4006d, #e00067, #ec005f, #f60b56);
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+}
+
+.pane {
+	margin: 0px 40px 40px 40px;
+	padding: 20px;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 500;
+	margin: 30px 0 15px 0;
+}
+
+p {
+	font-weight: 300;
+}
+
+a:link, a:visited {
+	color: #ffffff;
+}
+a:hover, a:active {
+	color: #ffffff;f
+}
+
+nav {
+	margin: 40px 40px 0 60px;
+	font-weight: 600;
+}
+
+@media (max-width: 1124px) {
+	nav {
+		margin-bottom: 0px;
+	}
+
+	.pane {
+		padding: 0 20px 20px 20px;
+	}
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	display: inline-block;
+}
+.nav-text {
+	position: relative;
+	bottom: 12px;
+	margin-left: 60px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+.nav-text {
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.nav-text::after {
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	opacity: 0;
+	background: #fff;
+	transition: opacity 0.2s ease, width 0.3s ease 0s;
+	width: 70%;
+}
+
+.nav-text:hover::after {
+	opacity: 100%;
+	width: 100%;
+}
+</style>
+
+<nav>
+	<ul>
+		<li><a href="https://engineering.photoshelter.com/"><img src="https://s.psecn.photoshelter.com/ps-mkt/img/inc/PS-INC_Developer_Logo_Negative_258x34.png" /></a></li>
+		<li class="nav-text"><a href="https://brands.photoshelter.com/">For Brands & Organizations</a></li>
+		<li class="nav-text"><a href="https://get.photoshelter.com/">For Photographers</a></li>
+	</ul>
+</nav>
+
+
+<div class="pane">
+	<h2>Resources</h2>
+
+	<p>
+	Our APIs were created to enable developers to build applications
+	that integrate PhotoShelter's powerful features.
+	Here, you’ll find documentation to get you started using our APIs.
+	</p>
+
+	<p>
+	<strong><a href="https://engineering.photoshelter.com/psapi-v4-doc/">API Version 4</a></strong>
+	- Our latest REST API features
+	OAuth, JSON:API responses, method overriding,
+	caller controllable output formatting,
+	a rich ecosystem for request bundling (includes),
+	and thorough documentation.
+	</p>
+
+	<p>
+	<strong><a href="https://www.photoshelter.com/developer/index">API Version 3</a></strong>
+	- For legacy projects.
+	</p>
+
+	<h2>Projects</h2>
+
+	<p>
+	Open source and more.
+	</p>
+
+	<p>
+	<strong><a href="https://github.com/photoshelter/tripod-hero-marquee">tripod-hero-marquee</a></strong>
+	- A web component-based element for displaying a hero image/video/graphic/color overlaid with text.
+	</p>
+
+	<p>
+	<strong><a href="https://github.com/photoshelter/generator-polymer-init-element-scaffold">generator-polymer-init-element-scaffold</a></strong>
+	- A Yeoman generator for building out web components.
+	</p>
+
+	<p>
+	<strong><a href="https://github.com/photoshelter/scrollstream">ScrollStream</a></strong>
+	- A jQuery plugin for making UI-correct,
+	infinite scroll grids with fixed footprints.
+	</p>
+
+	<h2>Careers</h2>
+
+	<p>
+	PhotoShelter is a leader in visual media technology that helps
+	photographers and creative teams work effortlessly and engage audiences
+	instantly - all while maintaining the integrity of their content.
+	Across our platform of SaaS products, we manage over 750 million
+	visual assets for 80,000 professional photographers and over
+	1,200 large brands, including universities, pro sports teams,
+	corporate and consumer brands, and leading nonprofits.
+	We were built by and for creative people,
+	and we’re committed to celebrating and supporting creative work.
+	<p>
+
+	<p>
+	Learn more and view openings <a href="https://apply.workable.com/photoshelter/"><strong>here</strong></a>.
+	</p>
+</div>
+
+<script>var _gaq=[['_setAccount','UA-3783380-14'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)})(document,'script')</script>
+
+</body>
+</html>
